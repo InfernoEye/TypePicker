@@ -13,7 +13,7 @@ namespace TypePicker
 {
     public class TypePicker : ResoniteMod
     {
-        internal const string VERSION_CONSTANT = "2.0.4";
+        internal const string VERSION_CONSTANT = "2.0.5";
         public override string Name => "TypePicker";
         public override string Author => "ForgottenSin(InfernoEye)"; // Originaly by TheJebForge. Ported by art0007i :)
         public override string Version => VERSION_CONSTANT;
