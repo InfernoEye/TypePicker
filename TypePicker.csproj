@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>TypePicker</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>E:\SteamLibrary\steamapps\common\Resonite\rml_libs\0Harmony.dll</HintPath>
+		<Private>False</Private>
+    </Reference>
+    <Reference Include="Elements.Assets">
+      <HintPath>E:\SteamLibrary\steamapps\common\Resonite\Elements.Assets.dll</HintPath>
+		<Private>False</Private>
+    </Reference>
+    <Reference Include="Elements.Core">
+      <HintPath>E:\SteamLibrary\steamapps\common\Resonite\Elements.Core.dll</HintPath>
+		<Private>False</Private>
+    </Reference>
+    <Reference Include="FrooxEngine">
+      <HintPath>E:\SteamLibrary\steamapps\common\Resonite\FrooxEngine.dll</HintPath>
+		<Private>False</Private>
+    </Reference>
+    <Reference Include="ResoniteModLoader">
+      <HintPath>E:\SteamLibrary\steamapps\common\Resonite\Libraries\ResoniteModLoader.dll</HintPath>
+		<Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,6 @@
-# Newer version of the mod is now [here](https://github.com/ResoniteModdingGroup/TypePicker) maintained by Banane9
+# TypePicker-WA 
+revitalized and partially vibed(sue me(pls don't XD))
 
-# Type Picker
 
 A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that adds type picker into ComponentAttacher 
 
