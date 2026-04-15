@@ -231,31 +231,13 @@ namespace TypePicker
         {
             try
             {
-                if (field?.Editor?.Target?.Text?.Target != null && type != null)
+                if (field.Editor.Target?.Text.Target != null && type != null)
                 {
-                    string typeString = null;
-
-                    var world = field.World;
-                    if (world != null)
-                    {
-                        var typeManagerProperty = world.GetType().GetProperty("TypeManager");
-                        if (typeManagerProperty != null)
-                        {
-                            var typeManager = typeManagerProperty.GetValue(world);
-                            if (typeManager != null)
-                            {
-                                var encodeMethod = typeManager.GetType().GetMethod("EncodeType", new[] { typeof(Type) });
-                                if (encodeMethod != null)
-                                {
-                                    typeString = encodeMethod.Invoke(typeManager, new object[] { type }) as string;
-                                }
-                            }
-                        }
-                    }
+                    string typeString = field.World.Types.EncodeType(type);
 
                     if (string.IsNullOrEmpty(typeString))
                     {
-                        typeString = type.GetNiceName("<", ">", "+");
+                        typeString = type.GetNiceName();
                     }
 
                     field.Editor.Target.Text.Target.Text = typeString;
